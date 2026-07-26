@@ -129,59 +129,11 @@ npx newman run postman/Collection.json \
 
 ---
 
-## 구현 내용
-
-### 1. API 간 데이터 전달
-
-결제 요청 응답에서 생성된 paymentId를 환경 변수에 저장하여 이후 API에서 재사용하도록 구현했습니다.
-
-```javascript
-const paymentId = response.body.paymentId;
-
-pm.environment.set("paymentId", paymentId);
-```
-
----
-
-### 2. 조건부 응답 검증
-
-응답 필드가 존재하는 경우에만 검증을 수행하도록 구현하여 다양한 응답 케이스를 처리했습니다.
-
-```javascript
-if (response.body.discountAmount !== undefined) {
-    pm.test("할인 금액 검증", function () {
-        pm.expect(response.body.discountAmount).to.be.at.least(0);
-    });
-}
-```
-
----
-
-### 3. 동적 요청 데이터 생성
-
-Pre-request Script를 활용하여 요청 시마다 필요한 데이터를 동적으로 생성했습니다.
-
----
-
-## 보안
-
-다음 파일은 Git 저장소에 포함하지 않습니다.
-
-```
-postman/Environment.json
-reports/
-node_modules/
-```
-
-또한 실제 운영 인증 정보 및 계정 정보는 저장소에 포함하지 않습니다.
-
----
-
 ## 실행 환경
 
 본 프로젝트는 네이버페이 샌드박스 및 내부 테스트 환경을 기반으로 작성되었습니다.
 
-일부 API는 접근 권한이 필요한 테스트 환경에서만 실행 가능하며, 저장소에는 테스트 구조와 자동화 코드만 포함되어 있습니다.
+일부 API(결제 요청)은 접근 권한이 필요한 테스트 환경에서만 실행 가능하며, 저장소에는 테스트 구조와 자동화 코드만 포함되어 있습니다.
 
 ---
 
