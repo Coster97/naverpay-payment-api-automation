@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test:api": "newman run \"postman/API 자동화 연습용.postman_collection.json\" -e \"postman/Environment.json\" -r cli,htmlextra --reporter-htmlextra-export \"reports/newman-report.html\" && start reports/newman-report.html "
+  },
+  "devDependencies": {
+    "newman": "^6.2.2",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
