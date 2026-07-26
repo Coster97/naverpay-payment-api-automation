@@ -2,22 +2,24 @@
 
 Postman과 Newman을 활용하여 네이버페이 결제 API의 주요 시나리오를 자동화한 프로젝트입니다.
 
-결제 예약, 승인, 적립, 결제내역 조회, 현금영수증 금액 조회, 결제 취소까지의 API 흐름을 하나의 테스트 시나리오로 구성하였으며, 응답 데이터를 다음 API에서 재사용할 수 있도록 환경 변수를 활용했습니다.
+결제 API는 **예약 → 승인 → 적립 → 조회 → 취소**처럼 여러 API가 하나의 업무 흐름으로 연결됩니다.
+
+본 프로젝트는 이러한 API 흐름을 자동화하고, 응답 데이터를 다음 API에서 재사용하도록 구성하여 반복적인 API 테스트를 효율적으로 수행할 수 있는 테스트 환경을 구현했습니다.
 
 ---
 
 ## 프로젝트 소개
 
-본 프로젝트는 API 테스트 자동화를 학습하고 실무와 유사한 테스트 환경을 구성하기 위해 제작되었습니다.
+API 테스트 자동화 환경을 구성하고, API 간 데이터 연계 및 응답 검증 자동화를 구현하기 위해 제작한 프로젝트입니다.
 
-주요 구현 내용은 다음과 같습니다.
+### 주요 구현 내용
 
 - Postman Collection 기반 API 테스트 구성
-- JavaScript를 활용한 응답 검증
-- 환경 변수(Environment) 및 Collection Variable 관리
-- API 간 데이터 연계 자동화
-- Newman 기반 CLI 실행
-- HTML 테스트 리포트 생성
+- Postman Test Script(JavaScript) 기반 응답 검증
+- Environment 및 Collection Variable 관리
+- API 간 응답 데이터 자동 연계
+- Newman 기반 CLI 테스트 실행
+- HTML 테스트 리포트 자동 생성
 
 ---
 
@@ -39,16 +41,16 @@ Postman과 Newman을 활용하여 네이버페이 결제 API의 주요 시나리
     ↓
 결제 승인
     ↓
-포인트 적립요청
+포인트 적립 요청
     ↓
-결제내역조회 (특정/기간)
+결제내역 조회 (특정 / 기간)
     ↓
 현금영수증 금액 조회
     ↓
 결제 취소
 ```
 
-각 API의 응답값을 환경 변수에 저장하여 다음 API에서 재사용하도록 구성했습니다.
+각 API의 응답 데이터를 Environment Variable 및 Collection Variable에 저장하여 후속 API에서 재사용하도록 구성했습니다.
 
 예시)
 
@@ -61,6 +63,16 @@ pm.collectionVariables.set("paymentId", response.body.paymentId);
 
 ---
 
+## 프로젝트 특징
+
+- API 간 응답 데이터를 자동으로 연계하여 테스트 수행
+- Environment Variable 및 Collection Variable을 활용한 데이터 관리
+- Newman 기반 CLI 테스트 실행
+- HTML 테스트 리포트 자동 생성
+- 반복 실행이 가능한 API 테스트 환경 구축
+
+---
+
 ## 주요 검증 항목
 
 - HTTP Status Code 검증
@@ -68,7 +80,7 @@ pm.collectionVariables.set("paymentId", response.body.paymentId);
 - 필수 응답 필드 존재 여부 검증
 - 결제 금액 검증
 - 결제 상태 검증
-- paymentId 동적 저장 및 재사용
+- paymentId 추출 및 후속 API 재사용
 - 조건부 응답 필드 검증
 - API 간 데이터 연계 검증
 
@@ -100,30 +112,28 @@ npm install
 
 ### 2. Environment 파일 생성
 
-```
-Environment.sample.json
-```
+`Environment.sample.json`을 복사하여
 
-파일을 복사하여
+`Environment.json`
 
-```
-Environment.json
-```
+파일을 생성한 뒤 필요한 인증 정보를 입력합니다.
 
-으로 변경한 뒤 필요한 인증 정보를 입력합니다.
-인증 정보는 아래 경로에서 확인 가능합니다.
+인증 정보는 아래 경로에서 확인할 수 있습니다.
 
-1. 네이버페이센터 https://developers.pay.naver.com/ > 가입/로그인 
-2. 내 개발정보 https://developers.pay.naver.com/user/merchant/auth 진입
-3. 결제형 > 내 인증값 확인하기 > 네이버페이 샌드박스 가맹점 정보 확인가능
+1. 네이버페이 Developers 로그인
+2. **내 개발정보**
+3. **결제형 > 내 인증값 확인하기**
+4. 샌드박스 가맹점 정보 확인
 
+---
 
 ### 3. Newman 실행
 
 ```bash
 npm run test:api
-
 ```
+
+실행 결과는 `reports/newman-report.html`에서 확인할 수 있습니다.
 
 ---
 
@@ -131,21 +141,26 @@ npm run test:api
 
 본 프로젝트는 네이버페이 샌드박스 및 내부 테스트 환경을 기반으로 작성되었습니다.
 
-일부 API(결제 승인)은 접근 권한이 필요한 테스트 환경을 통해 paymentId를 수집하여 실행 가능하며, 저장소에는 테스트 구조와 자동화 코드만 포함되어 있습니다.
+결제 승인 API는 내부 테스트 환경을 통해 paymentId(결제 승인 전인)를 수집하여 호출 가능한 API이므로 권한에 따라 실행이 어려울 수 있습니다.
 
 ---
 
 ## 향후 개선 계획
 
 - 실패 시나리오 자동화 추가
-- 데이터 기반 테스트(Data Driven Testing) 적용
-- GitHub Actions를 활용한 자동 실행
-- 테스트 리포트 자동 업로드
+- Data Driven Testing 적용
+- Collection 모듈화
+- GitHub Actions 기반 CI 자동 실행
 - 테스트 케이스 확장
 
 ---
 
-## 실행 결과 예시
-<img width="800" height="964" alt="image" src="https://github.com/user-attachments/assets/b7e8c573-20a2-4702-947e-b09c033f2202" />
+## 실행 결과
 
-<img width="800" height="1173" alt="image" src="https://github.com/user-attachments/assets/1287cbc9-9347-4d8a-840b-10c866f7b5be" />
+### Newman CLI
+
+<img width="800" alt="CLI Result" src="https://github.com/user-attachments/assets/b7e8c573-20a2-4702-947e-b09c033f2202" />
+
+### HTML Report
+
+<img width="800" alt="HTML Report" src="https://github.com/user-attachments/assets/1287cbc9-9347-4d8a-840b-10c866f7b5be" />
