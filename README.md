@@ -147,11 +147,10 @@ npm run test:api
 
 ## 향후 개선 계획
 
-- 실패 시나리오 자동화 추가
-- Data Driven Testing 적용
-- Collection 모듈화
-- GitHub Actions 기반 CI 자동 실행
-- 테스트 케이스 확장
+- 결제형 자동결제 API 시나리오 추가
+- 실패 시나리오 및 예외 응답 검증 추가
+- 응답 스키마 기반 검증 강화
+- Collection 구조 개선
 
 ---
 
