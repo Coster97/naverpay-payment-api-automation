@@ -111,6 +111,12 @@ Environment.json
 ```
 
 으로 변경한 뒤 필요한 인증 정보를 입력합니다.
+인증 정보는 아래 경로에서 확인 가능합니다.
+
+1. 네이버페이센터 https://developers.pay.naver.com/ > 가입/로그인 
+2. 내 개발정보 https://developers.pay.naver.com/user/merchant/auth 진입
+3. 결제형 > 내 인증값 확인하기 > 네이버페이 샌드박스 가맹점 정보 확인가능
+
 
 ### 3. Newman 실행
 
