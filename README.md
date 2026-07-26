@@ -144,3 +144,10 @@ npx newman run postman/Collection.json \
 - GitHub Actions를 활용한 자동 실행
 - 테스트 리포트 자동 업로드
 - 테스트 케이스 확장
+
+---
+
+## 실행 결과 예시
+<img width="800" height="964" alt="image" src="https://github.com/user-attachments/assets/b7e8c573-20a2-4702-947e-b09c033f2202" />
+
+<img width="800" height="1173" alt="image" src="https://github.com/user-attachments/assets/1287cbc9-9347-4d8a-840b-10c866f7b5be" />
