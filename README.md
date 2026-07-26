@@ -121,10 +121,8 @@ Environment.json
 ### 3. Newman 실행
 
 ```bash
-npx newman run postman/Collection.json \
--e postman/Environment.json \
--r cli,htmlextra \
---reporter-htmlextra-export reports/report.html
+npm run test:api
+
 ```
 
 ---
