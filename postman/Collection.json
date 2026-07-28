@@ -79,14 +79,8 @@
             "url": {
               "raw": "https://{{nsp-domain}}/payments/v2/reserve",
               "protocol": "https",
-              "host": [
-                "{{nsp-domain}}"
-              ],
-              "path": [
-                "payments",
-                "v2",
-                "reserve"
-              ]
+              "host": ["{{nsp-domain}}"],
+              "path": ["payments", "v2", "reserve"]
             }
           },
           "response": []
@@ -155,9 +149,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.2/apply/payment",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -228,9 +220,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v1/naverpoint-save",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -372,9 +362,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.3/list/history/{{paymentId}}",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -470,9 +458,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2/receipt/cash-amount",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -569,9 +555,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v1/cancel?paymentId={{paymentId}}&cancelAmount=1000&taxScopeAmount=1000&taxExScopeAmount=0&cancelReason=테스트 취소&cancelRequester=2",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -800,9 +784,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.3/list/history",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -908,16 +890,8 @@
             "url": {
               "raw": "https://{{nsp-domain}}/payments/recurrent/regist/v1/reserve",
               "protocol": "https",
-              "host": [
-                "{{nsp-domain}}"
-              ],
-              "path": [
-                "payments",
-                "recurrent",
-                "regist",
-                "v1",
-                "reserve"
-              ]
+              "host": ["{{nsp-domain}}"],
+              "path": ["payments", "recurrent", "regist", "v1", "reserve"]
             }
           },
           "response": []
@@ -998,9 +972,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/regist/v1/approval",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1112,9 +1084,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/v1/list",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1216,9 +1186,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/pay/v3/reserve",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1341,9 +1309,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/pay/v3/approval",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1409,9 +1375,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v1/naverpoint-save",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1602,9 +1566,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.3/list/history",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1705,9 +1667,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2/receipt/cash-amount",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1845,9 +1805,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v1/cancel",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -2010,9 +1968,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.3/list/history/{{auto-paymentId}}?paymentId={{auto-paymentId}}",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -2096,9 +2052,7 @@
             "url": {
               "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/expire/v1/request",
               "protocol": "https",
-              "host": [
-                "{{domain}}"
-              ],
+              "host": ["{{domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
