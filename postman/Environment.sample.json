@@ -1,6 +1,6 @@
 {
   "id": "9d505a8c-b410-45bb-9a63-3ccb198b9fc2",
-  "name": "NaverPay Payment API Sample Environment",
+  "name": "New Environment",
   "values": [
     {
       "key": "X-Naver-Client-Id",
@@ -33,20 +33,26 @@
       "enabled": true
     },
     {
-      "key": "reserveId",
+      "key": "auto-X-Naver-Client-Id",
       "value": "",
-      "type": "any",
+      "type": "default",
       "enabled": true
     },
     {
-      "key": "paymentId",
+      "key": "auto-X-Naver-Client-Secret",
       "value": "",
-      "type": "any",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "auto-X-NaverPay-Chain-Id",
+      "value": "",
+      "type": "default",
       "enabled": true
     }
   ],
   "color": null,
   "_postman_variable_scope": "environment",
-  "_postman_exported_at": "2026-07-26T14:35:16.093Z",
+  "_postman_exported_at": "2026-07-28T04:49:58.018Z",
   "_postman_exported_using": "Postman/11.91.0"
 }
