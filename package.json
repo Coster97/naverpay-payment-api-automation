@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test:api": "newman run \"postman/collection.json\" -e \"postman/Environment.json\" -r cli,htmlextra --reporter-htmlextra-export \"reports/newman-report.html\" && start reports/newman-report.html "
+    "test:api": "newman run \"postman/collection.json\" -e \"postman/Environment.json\" -r cli,htmlextra --reporter-htmlextra-export \"reports/newman-report.html\" & start reports/newman-report.html"
   },
   "devDependencies": {
     "newman": "^6.2.2",
