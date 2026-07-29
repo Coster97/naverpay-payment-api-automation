@@ -144,8 +144,10 @@ pm.collectionVariables.set("paymentId", response.body.paymentId);
 
 ### Newman CLI
 
-<img width="800" alt="CLI Result" src="https://github.com/user-attachments/assets/b7e8c573-20a2-4702-947e-b09c033f2202" />
+<img width="800" height="1289" alt="image" src="https://github.com/user-attachments/assets/b74a54ec-2106-4cfc-8c5c-63e661453314" />
+
 
 ### HTML Report
 
-<img width="800" alt="HTML Report" src="https://github.com/user-attachments/assets/1287cbc9-9347-4d8a-840b-10c866f7b5be" />
+<img width="800" height="1205" alt="image" src="https://github.com/user-attachments/assets/5f7d4dca-ec18-4d1e-8cdd-314875aa3d90" />
+
