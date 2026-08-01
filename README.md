@@ -98,9 +98,7 @@ pm.collectionVariables.set("paymentId", response.body.paymentId);
 
 - HTTP Status Code 검증
 - 응답 성공 여부 검증
-- 필수 응답 필드 존재 여부 검증
-- 결제 금액 검증
-- 결제 상태 검증
+- 필수 응답 필드 존재 여부 및 정합성 검증
 - paymentId 추출 및 후속 API 재사용
 - 조건부 응답 필드 검증
 - API 간 데이터 연계 검증
