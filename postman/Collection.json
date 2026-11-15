@@ -65,11 +65,16 @@
                 "value": "",
                 "type": "text",
                 "disabled": true
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"merchantUserKey\": \"nvqa_kyung2\",\r\n  \"merchantPayKey\": \"엔페이테스트_에스크로_테스트-20260724164031149\",\r\n  \"merchantPayTransactionKey\": \"엔페이테스트_에스크로_테스트-tx-20260724164031149\",\r\n  \"productName\": \"결제형단건-API자동화테스트\",\r\n  \"productCount\": 5,\r\n  \"totalPayAmount\": 1000,\r\n  \"taxScopeAmount\": 1000,\r\n  \"taxExScopeAmount\": 0,\r\n  \"environmentDepositAmount\": 0,\r\n  \"deliveryFee\": 0,\r\n  \"returnUrl\": \"https://dev-pay-test.pay.naver.com/pages/online-pay/one-time-payments/pay-sheet-test?activeStep=1\",\r\n  \"purchaserName\": \"박은경\",\r\n  \"purchaserBirthday\": \"19970725\",\r\n  \"extraDeduction\": false,\r\n  \"merchantExtraParameter\": \"{\\n    'payType' : 'NORMAL',\\n    'testField' : 'testMerchantExtraParameter'\\n}\",\r\n  \"productItems\": [\r\n    {\r\n      \"categoryType\": \"BOOK\",\r\n      \"categoryId\": \"GENERAL\",\r\n      \"uid\": \"107922211\",\r\n      \"name\": \"한국사\",\r\n      \"payReferrer\": \"NAVER_BOOK\",\r\n      \"count\": 10\r\n    },\r\n    {\r\n      \"categoryType\": \"MUSIC\",\r\n      \"categoryId\": \"CD\",\r\n      \"uid\": \"299911002\",\r\n      \"name\": \"Loves\",\r\n      \"payReferrer\": \"NAVER_BOOK\",\r\n      \"count\": 2\r\n    }\r\n  ],\r\n  \"subMerchantInfo\": {\r\n    \"subMerchantName\": \"하부가맹점명\",\r\n    \"subMerchantId\": \"하부가맹점ID\",\r\n    \"subMerchantBusinessNo\": \"0123456789\",\r\n    \"subMerchantPayId\": \"하부가맹점결제키\",\r\n    \"subMerchantTelephoneNo\": \"1588-3820\",\r\n    \"subMerchantCustomerServiceUrl\": \"https://www.naver.com\"\r\n  }\r\n}",
+              "raw": "{\r\n  \"merchantUserKey\": \"nvqa_kyung2\",\r\n  \"merchantPayKey\": \"엔페이테스트_에스크로_테스트-20260724164031149\",\r\n  \"merchantPayTransactionKey\": \"엔페이테스트_에스크로_테스트-tx-20260724164031149\",\r\n  \"productName\": \"결제형단건-API자동화테스트\",\r\n  \"productCount\": 3,\r\n  \"totalPayAmount\": 1000,\r\n  \"taxScopeAmount\": 1000,\r\n  \"taxExScopeAmount\": 0,\r\n  \"environmentDepositAmount\": 0,\r\n  \"deliveryFee\": 0,\r\n  \"returnUrl\": \"https://dev-pay-test.pay.naver.com/pages/online-pay/one-time-payments/pay-sheet-test?activeStep=1\",\r\n  \"purchaserName\": \"박은경\",\r\n  \"purchaserBirthday\": \"19970725\",\r\n  \"extraDeduction\": false,\r\n  \"merchantExtraParameter\": \"{\\n    'payType' : 'NORMAL',\\n    'testField' : 'testMerchantExtraParameter'\\n}\",\r\n  \"productItems\": [\r\n    {\r\n      \"categoryType\": \"BOOK\",\r\n      \"categoryId\": \"GENERAL\",\r\n      \"uid\": \"107922211\",\r\n      \"name\": \"한국사\",\r\n      \"payReferrer\": \"NAVER_BOOK\",\r\n      \"count\": 10\r\n    },\r\n    {\r\n      \"categoryType\": \"MUSIC\",\r\n      \"categoryId\": \"CD\",\r\n      \"uid\": \"299911002\",\r\n      \"name\": \"Loves\",\r\n      \"payReferrer\": \"NAVER_BOOK\",\r\n      \"count\": 2\r\n    }\r\n  ],\r\n  \"subMerchantInfo\": {\r\n    \"subMerchantName\": \"하부가맹점명\",\r\n    \"subMerchantId\": \"하부가맹점ID\",\r\n    \"subMerchantBusinessNo\": \"0123456789\",\r\n    \"subMerchantPayId\": \"하부가맹점결제키\",\r\n    \"subMerchantTelephoneNo\": \"1588-3820\",\r\n    \"subMerchantCustomerServiceUrl\": \"https://www.naver.com\"\r\n  }\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -133,6 +138,11 @@
                 "value": "",
                 "type": "text",
                 "disabled": true
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES",
+                "type": "text"
               }
             ],
             "body": {
@@ -140,16 +150,16 @@
               "urlencoded": [
                 {
                   "key": "paymentId",
-                  "value": "20260729NP1214535063",
+                  "value": "20261113NP1215507640",
                   "type": "text",
                   "uuid": "0ebecd4d-d1de-45ec-9a0d-8191e7e801c5"
                 }
               ]
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.2/apply/payment",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v2.2/apply/payment",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -198,6 +208,11 @@
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{X-NaverPay-Chain-Id}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES",
+                "type": "text"
               }
             ],
             "body": {
@@ -218,9 +233,9 @@
               ]
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v1/naverpoint-save",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v1/naverpoint-save",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -348,6 +363,11 @@
                 "key": "Content-Type",
                 "value": "application/json",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE",
+                "type": "text"
               }
             ],
             "body": {
@@ -360,9 +380,9 @@
               }
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.3/list/history/{{paymentId}}",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v2.3/list/history/{{paymentId}}",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -444,6 +464,11 @@
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{X-NaverPay-Chain-Id}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES",
+                "type": "text"
               }
             ],
             "body": {
@@ -456,9 +481,9 @@
               }
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2/receipt/cash-amount",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v2/receipt/cash-amount",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -550,12 +575,17 @@
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{X-NaverPay-Chain-Id}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES",
+                "type": "text"
               }
             ],
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v1/cancel?paymentId={{paymentId}}&cancelAmount=1000&taxScopeAmount=1000&taxExScopeAmount=0&cancelReason=테스트 취소&cancelRequester=2",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v1/cancel?paymentId={{paymentId}}&cancelAmount=10&taxScopeAmount=1000&taxExScopeAmount=0&cancelReason=테스트 취소&cancelRequester=2",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -570,7 +600,7 @@
                 },
                 {
                   "key": "cancelAmount",
-                  "value": "1000"
+                  "value": "10"
                 },
                 {
                   "key": "taxScopeAmount",
@@ -770,6 +800,11 @@
                 "key": "Content-Type",
                 "value": "application/json",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES",
+                "type": "text"
               }
             ],
             "body": {
@@ -782,9 +817,9 @@
               }
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.3/list/history",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v2.3/list/history",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -850,6 +885,11 @@
                 "value": "",
                 "type": "text",
                 "disabled": true
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -950,6 +990,11 @@
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{auto-X-NaverPay-Chain-Id}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -957,22 +1002,22 @@
               "urlencoded": [
                 {
                   "key": "reserveId",
-                  "value": "20260729QVNQTy9DbjhLekUwWWN5Tk1Pd1NPRDZ3eU8wPQ==",
+                  "value": "20261111YTVsZm9BZHFhK0RKNVVLM21Hazgra2ZjYzJ3PQ==",
                   "type": "text",
                   "uuid": "45cb0db1-c63e-4663-8007-e10763f204a2"
                 },
                 {
                   "key": "tempReceiptId",
-                  "value": "20260729TP1214535065NEJQSV",
+                  "value": "20261111TP1215489723a1BOSW",
                   "type": "text",
                   "uuid": "675fafa1-d4a1-4ce7-94e1-da07e26f0f38"
                 }
               ]
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/regist/v1/approval",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/recurrent/regist/v1/approval",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1070,6 +1115,11 @@
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{auto-X-NaverPay-Chain-Id}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -1082,9 +1132,9 @@
               }
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/v1/list",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/recurrent/v1/list",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1133,6 +1183,11 @@
               {
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{auto-X-NaverPay-Chain-Id}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
                 "type": "text"
               }
             ],
@@ -1184,9 +1239,9 @@
               ]
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/pay/v3/reserve",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/recurrent/pay/v3/reserve",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1293,6 +1348,11 @@
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{auto-X-NaverPay-Chain-Id}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -1307,9 +1367,9 @@
               ]
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/pay/v3/approval",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/recurrent/pay/v3/approval",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1359,6 +1419,11 @@
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{auto-X-NaverPay-Chain-Id}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -1373,9 +1438,9 @@
               ]
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v1/naverpoint-save",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v1/naverpoint-save",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1552,6 +1617,11 @@
                 "key": "Content-Type",
                 "value": "application/json",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -1564,9 +1634,9 @@
               }
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.3/list/history",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v2.3/list/history",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1653,6 +1723,11 @@
                 "key": "Content-Type",
                 "value": "application/json",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -1665,9 +1740,9 @@
               }
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2/receipt/cash-amount",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v2/receipt/cash-amount",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1759,6 +1834,11 @@
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{auto-X-NaverPay-Chain-Id}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -1803,9 +1883,9 @@
               ]
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v1/cancel",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v1/cancel",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -1954,6 +2034,11 @@
                 "key": "Content-Type",
                 "value": "application/json",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -1966,9 +2051,9 @@
               }
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/v2.3/list/history/{{auto-paymentId}}?paymentId={{auto-paymentId}}",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/v2.3/list/history/{{auto-paymentId}}?paymentId={{auto-paymentId}}",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -2024,6 +2109,11 @@
                 "key": "X-NaverPay-Chain-Id",
                 "value": "{{auto-X-NaverPay-Chain-Id}}",
                 "type": "text"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
               }
             ],
             "body": {
@@ -2050,9 +2140,9 @@
               ]
             },
             "url": {
-              "raw": "https://{{domain}}/naverpay-partner/naverpay/payments/recurrent/expire/v1/request",
+              "raw": "https://{{nsp-domain}}/naverpay-partner/naverpay/payments/recurrent/expire/v1/request",
               "protocol": "https",
-              "host": ["{{domain}}"],
+              "host": ["{{nsp-domain}}"],
               "path": [
                 "naverpay-partner",
                 "naverpay",
@@ -2061,6 +2151,1679 @@
                 "expire",
                 "v1",
                 "request"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "인증형단건",
+      "item": [
+        {
+          "name": "01. 결제예약",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "\r",
+                  "pm.test('결제 예약 성공하였습니다.', function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "    pm.collectionVariables.set(\"ap-one-reserveId\", body.reserveId);\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json;charset=UTF-8"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "reserve",
+                "disabled": true
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-one-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-one-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-one-X-NaverPay-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,nl-NL",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"merchantPayId\": \"nvqa_kyung2\",\r\n\t\"merchantUserId\": \"nvqa_kyung2\",\r\n\t\r\n    \"productName\": \"인증형단건-API자동화테스트\",\r\n    \"productCount\": 1,\r\n    \"productAmount\": 100,\r\n    \r\n    \"subMerchantInfo\": {\r\n\t\t\"subMerchantName\": \"__subMerchantName__\",\r\n\t\t\"subMerchantId\": \"__subMerchantId__\",\r\n\t\t\"subMerchantBusinessNo\": \"9876543210\",\r\n\t\t\"subMerchantPayId\": \"__subMerchantPayId__\",\r\n\t\t\"subMerchantTelephoneNo\": \"0311234567890-0311234567890-0311234567890-0311234567890-0311234567890-0311234567890-0311234567890-03\",\r\n\t\t\"subMerchantCustomerServiceUrl\": \"https://google.com\"\r\n\t},\r\n    \r\n    \"subMerchantName\": \"__oldSubMerchantName__\",\r\n    \"subMerchantId\": \"__oldSubMerchantId__\",\r\n    \r\n    \"returnUrl\": \"https://alpha-pay.naver.com/payments/test-supports/auth-pay\",\r\n    \"creditCardCommissionAmount\": 14,\r\n    \"purchaserName\" : \"박은경\",\r\n    \"purchaserBirthday\" : \"19970725\",\r\n    \r\n    \"merchantExtraParameter\": \"__merchantExtraParameter__\",\r\n    \r\n    \r\n   \"cardMethodList\": [{\r\n    \"cardCorpCode\": \"C0\",\r\n    \"usableCardPoint\": true,\r\n    \"cardInstallmentList\": [{ \"month\": 2, \"minAmount\": 1000, \"interestType\": \"PART_FREE\", \"freeInterestMinAmount\": 0 }, { \"month\": 3, \"minAmount\": 1000, \"interestType\": \"FREE\" }, { \"month\": 6, \"minAmount\": 50000 }, { \"month\": 12, \"minAmount\": 100000 }]\r\n}, {\r\n    \"cardCorpCode\": \"CB\",\r\n    \"usableCardPoint\": true,\r\n    \"cardInstallmentList\": [{ \"month\": 2, \"minAmount\": 1000, \"interestType\": \"PART_FREE\", \"freeInterestMinAmount\": 0 }, { \"month\": 3, \"minAmount\": 1000, \"interestType\": \"FREE\" }, { \"month\": 6, \"minAmount\": 50000 }, { \"month\": 12, \"minAmount\": 100000 }]\r\n}, {\r\n    \"cardCorpCode\": \"C1\",\r\n    \"usableCardPoint\": false,\r\n    \"cardInstallmentList\": [{ \"month\": 2, \"minAmount\": 1000 }, { \"month\": 3, \"minAmount\": 1000, \"interestType\": \"FREE\" }]\r\n}, {\r\n    \"cardCorpCode\": \"C3\",\r\n    \"usableCardPoint\": false,\r\n    \"cardInstallmentList\": [{ \"month\": 2, \"minAmount\": 1000 }, { \"month\": 3, \"minAmount\": 1000, \"interestType\": \"FREE\" }]\r\n}, {\r\n    \"cardCorpCode\": \"C7\",\r\n    \"usableCardPoint\": false,\r\n    \"cardInstallmentList\": [{ \"month\": 2, \"minAmount\": 10000 }, { \"month\": 3, \"minAmount\": 10000, \"interestType\": \"FREE\" }]\r\n}, {\r\n    \"cardCorpCode\": \"CH\",\r\n    \"usableCardPoint\": true,\r\n    \"cardInstallmentList\": []\r\n}]\r\n\r\n    \r\n}\r\n"
+            },
+            "url": {
+              "raw": "http://{{auto-one-domain}}/payments/auth-pay/v1/reserve",
+              "protocol": "http",
+              "host": ["{{auto-one-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "reserve"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "02. 결제수단 정보 조회",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"결제수단 정보 조회 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://alpha-authpay-api.pay.naver.com/internal/one-time-payments/pay-sheet/v1/reservations/:reserveId/pay-method?payMemberNo=200771566",
+              "protocol": "https",
+              "host": ["alpha-authpay-api", "pay", "naver", "com"],
+              "path": [
+                "internal",
+                "one-time-payments",
+                "pay-sheet",
+                "v1",
+                "reservations",
+                ":reserveId",
+                "pay-method"
+              ],
+              "query": [
+                {
+                  "key": "payMemberNo",
+                  "value": "200771566"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "reserveId",
+                  "value": "{{ap-one-reserveId}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "03. 결제 인증",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "\r",
+                  "pm.test('결제 인증 성공하였습니다.', function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "    pm.collectionVariables.set(\"ap-one-paymentId\", body.paymentId);\r",
+                  "    \r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [""],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-one-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-one-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-one-X-NaverPay-Chain-Id}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"paymentId\":\"20261112NP1215498118\",\r\n\t\"encryptKey\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmIX+HQ2S1zaouF+eYWBWPMcKZ3/uqpnuwzSPEscJXA6x8ipqfKPpi9frpmmymbWDQaDzNf0m/pNWFs72gTW7yDjas6TmzcyItVlmBYqOSTizzUFWcVczR/cKJyn4HGf//c9bEnnrx3TOYFqQ08pvnucyPwv31XF/Pg+jzHWFS/QXMNwenXY4zNN4DWFsQWyW7IaY/GqXX52wLBh4JkYYnrnZqLRzoCBMrBSsdJXcF1evm8V3ShrmDo4azePCMCARS5ni3zbgdGZJ+QxBqAzjWOxBh9THNUXjw52dEXGXpZVS0F7Twdw6y94QD711M8DVcI4jtEnenmm+HQHIVsKjlQIDAQAB\"\r\n}\r\n"
+            },
+            "url": {
+              "raw": "http://{{auto-one-domain}}/payments/auth-pay/v1/authorize",
+              "protocol": "http",
+              "host": ["{{auto-one-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "authorize"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "04. 결제승인",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "const bodyFields = [\r",
+                  "    \"paymentId\",\r",
+                  "    \"historyDetail\"\r",
+                  "]\r",
+                  "\r",
+                  "pm.test(\"결제 승인 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "})\r",
+                  "\r",
+                  "pm.test(\"body 필수 필드가 정상 조회됩니다.\", function() {\r",
+                  "    bodyFields.forEach(field => {\r",
+                  "        pm.expect(body).to.have.property(field);\r",
+                  "    })\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-one-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-one-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-one-X-NaverPay-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"paymentId\": \"{{ap-one-paymentId}}\",\r\n\t\"success\" : true,\r\n\t\"interestType\" : \"PART_FREE\",\r\n\t\"partFreeInterestMonths\" : [1, 2],\r\n\t\"cardAuthNo\" : \"1234567890-1234567890123456789\"\r\n\t\r\n}\r\n"
+            },
+            "url": {
+              "raw": "http://{{auto-one-domain}}/payments/auth-pay/v1/apply",
+              "protocol": "http",
+              "host": ["{{auto-one-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "apply"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "05. 결제취소",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const payment = result.body ?? {};\r",
+                  "const cancelAmount = payment.cancelAmount;\r",
+                  "\r",
+                  "const bodyFields = [\r",
+                  "  \"paymentId\",\r",
+                  "  \"merchantPayId\",\r",
+                  "  \"cancelAmount\",\r",
+                  "  \"payHistId\",\r",
+                  "  \"restAmount\",\r",
+                  "  \"cancelDate\",\r",
+                  "]\r",
+                  "\r",
+                  "pm.test(\"결제 취소를 성공하였습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "})\r",
+                  "\r",
+                  "pm.test(\"필수 필드가 정상 조회됩니다.\", function() {\r",
+                  "    bodyFields.forEach(field => {\r",
+                  "        pm.expect(payment).to.have.property(field);\r",
+                  "    })\r",
+                  "})\r",
+                  "\r",
+                  "if(cancelAmount && cancelAmount != \"\") {\r",
+                  "    pm.test(`${cancelAmount}원 정상 취소되었습니다.`, function() {\r",
+                  "        pm.expect(true).to.be.true;\r",
+                  "    });\r",
+                  "}"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-one-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-one-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-one-X-NaverPay-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"paymentId\": \"{{ap-one-paymentId}}\",\r\n\t\"cancelAmount\": 100,\r\n\t\"cancelReason\": \"++cancelReason++\",\r\n\t\"cancelRequester\": 2\r\n\t\r\n}\r\n"
+            },
+            "url": {
+              "raw": "http://{{auto-one-domain}}/payments/auth-pay/v1/cancel",
+              "protocol": "http",
+              "host": ["{{auto-one-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "cancel"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "06. 결제내역조회 (단건)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "const payment = result.body.detailList[0];\r",
+                  "const paymentSubMerchantInfo = payment.subMerchantInfo;\r",
+                  "\r",
+                  "const bodyFields = [\r",
+                  "    \"detailList\",\r",
+                  "    \"totalCount\",\r",
+                  "    \"currentCount\",\r",
+                  "    \"totalPageCount\",\r",
+                  "    \"currentPageNo\"\r",
+                  "]\r",
+                  "\r",
+                  "const detailListFields = [\r",
+                  "  \"paymentId\",\r",
+                  "  \"payHistId\",\r",
+                  "  \"admissionState\",\r",
+                  "  \"admissionTypeCode\",\r",
+                  "  \"tradeDate\",\r",
+                  "  \"totalAmount\",\r",
+                  "  \"merchantName\",\r",
+                  "  \"merchantId\",\r",
+                  "  \"merchantPayId\",\r",
+                  "  \"merchantUserId\",\r",
+                  "  \"productName\",,\r",
+                  "  \"merchantExtraParameter\",\r",
+                  "  \"subMerchantInfo\",\r",
+                  "  \"cardType\",\r",
+                  "  \"cardCorpCode\",\r",
+                  "  \"cardNo\",\r",
+                  "  \"cardAuthNo\",\r",
+                  "  \"usedCardPoint\",\r",
+                  "  \"installmentMonth\"\r",
+                  "]\r",
+                  "\r",
+                  "const subMerchantInfoFields = [\r",
+                  "  \"subMerchantName\",\r",
+                  "  \"subMerchantId\",\r",
+                  "  \"subMerchantBusinessNo\",\r",
+                  "  \"subMerchantPayId\",\r",
+                  "  \"subMerchantTelephoneNo\",\r",
+                  "  \"subMerchantCustomerServiceUrl\",\r",
+                  "]\r",
+                  "\r",
+                  "pm.test(\"특정 결제번호의 결제내역조회에 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "})\r",
+                  "\r",
+                  "pm.test(`body 필수 필드가 정상 조회됩니다.`, function() {\r",
+                  "    bodyFields.forEach(field => {\r",
+                  "        pm.expect(body).to.have.property(field);\r",
+                  "    })\r",
+                  "})\r",
+                  "\r",
+                  "pm.test(`결제내역 필수 필드가 정상 조회됩니다.`, function() {\r",
+                  "    detailListFields.forEach(field => {\r",
+                  "        pm.expect(payment).to.have.property(field);\r",
+                  "    })\r",
+                  "})\r",
+                  "\r",
+                  "pm.test(`하부가맹점 필수 필드가 정상 조회됩니다.`, function() {\r",
+                  "    subMerchantInfoFields.forEach(field => {\r",
+                  "        pm.expect(paymentSubMerchantInfo).to.have.property(field);\r",
+                  "    })\r",
+                  "})\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-one-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-one-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-one-X-NaverPay-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"pageNo\": 1,\r\n\t\"rowsPerPage\": 20\r\n}\r\n"
+            },
+            "url": {
+              "raw": "http://{{auto-one-domain}}/payments/auth-pay/v1/history/:paymentId",
+              "protocol": "http",
+              "host": ["{{auto-one-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "history", ":paymentId"],
+              "variable": [
+                {
+                  "key": "paymentId",
+                  "value": "{{ap-one-paymentId}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "07. 결제내역조회 (기간)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const paymentList = result.body.detailList;\r",
+                  "const paymentListLength = paymentList.length;\r",
+                  "const payment = paymentList[paymentListLength-1];\r",
+                  "\r",
+                  "\r",
+                  "const requiredFields = [\r",
+                  "    \"paymentId\",\r",
+                  "    \"payHistId\",\r",
+                  "    \"admissionState\",\r",
+                  "    \"admissionTypeCode\",\r",
+                  "    \"tradeDate\",\r",
+                  "    \"totalAmount\",\r",
+                  "    \"merchantName\",\r",
+                  "    \"merchantId\",\r",
+                  "    \"merchantPayId\",\r",
+                  "    \"merchantUserId\",\r",
+                  "    \"productName\",\r",
+                  "    \"cardType\",\r",
+                  "    \"cardCorpCode\",\r",
+                  "    \"cardAuthNo\",\r",
+                  "    \"usedCardPoint\",\r",
+                  "    \"installmentMonth\"\r",
+                  "];\r",
+                  "\r",
+                  "const subMerchantFields = [\r",
+                  "    \"subMerchantName\",\r",
+                  "    \"subMerchantId\",\r",
+                  "    \"subMerchantBusinessNo\",\r",
+                  "    \"subMerchantPayId\",\r",
+                  "    \"subMerchantTelephoneNo\",\r",
+                  "    \"subMerchantCustomerServiceUrl\"\r",
+                  "];\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"결제내역 조회에 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\")\r",
+                  "})\r",
+                  "\r",
+                  "pm.test(\"결제내역 배열이 존재합니다.\", function () {\r",
+                  "    pm.expect(paymentList).to.be.an(\"array\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(`기간 내 결제내역이 ${paymentListLength}건 조회됩니다.`, function() {\r",
+                  "    pm.expect(true).to.be.true;\r",
+                  "})\r",
+                  "\r",
+                  "//atmost 이하\r",
+                  "//atleast 이상\r",
+                  "//atblow 미만\r",
+                  "//atabove 초과\r",
+                  "\r",
+                  "if (paymentListLength > 1) {\r",
+                  "    pm.test(\"결제내역이 tradeDate 기준 오름차순으로 정렬됩니다.\", function () {\r",
+                  "        for (let i = 0; i < paymentListLength - 1; i++) {\r",
+                  "            const current = new Date(paymentList[i].tradeDate).getTime();\r",
+                  "            const next = new Date(paymentList[i + 1].tradeDate).getTime();\r",
+                  "\r",
+                  "            pm.expect(current).to.be.at.most(next);\r",
+                  "        }\r",
+                  "    });\r",
+                  "}\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"기간 내 결제번호가 정상 조회됩니다.\", function() {\r",
+                  "    pm.expect(payment.paymentId).to.eql(pm.collectionVariables.get(\"ap-one-paymentId\"));\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"결제내역 필수 필드가 정상 조회됩니다.\", function(){\r",
+                  "    requiredFields.forEach(field => {\r",
+                  "        pm.expect(payment).to.have.property(field);\r",
+                  "    })\r",
+                  "})\r",
+                  "\r",
+                  "pm.test(\"하부가맹점 필수 필드가 정상 조회됩니다.\", function() {\r",
+                  "    subMerchantFields.forEach(field => {\r",
+                  "        pm.expect(payment.subMerchantInfo).to.have.property(field);\r",
+                  "    })\r",
+                  "})\r",
+                  "\r",
+                  "\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "const now = new Date();\r",
+                  "\r",
+                  "const yyyy = now.getFullYear();\r",
+                  "const MM = String(now.getMonth() + 1).padStart(2, '0');\r",
+                  "const dd = String(now.getDate()).padStart(2, '0');\r",
+                  "\r",
+                  "const HH = String(now.getHours()).padStart(2, '0');\r",
+                  "const mm = String(now.getMinutes()).padStart(2, '0');\r",
+                  "const ss = String(now.getSeconds()).padStart(2, '0');\r",
+                  "\r",
+                  "pm.collectionVariables.set(\"startTime\", `${yyyy}-${MM}-${dd}T00:00:00+0900`);\r",
+                  "pm.collectionVariables.set(\"endTime\", `${yyyy}-${MM}-${dd}T${HH}:${mm}:${ss}+0900`);"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-one-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-one-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-one-X-NaverPay-Chain-Id}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"startDate\": \"{{startTime}}\",\r\n    \"endDate\": \"{{endTime}}\",\r\n\t\"approvalType\": \"APPROVAL\",\r\n\t\"pageNo\": 1,\r\n\t\"rowsPerPage\": 29\r\n}\r\n"
+            },
+            "url": {
+              "raw": "http://{{auto-one-domain}}/payments/auth-pay/v1/history",
+              "protocol": "http",
+              "host": ["{{auto-one-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "history"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "인증형자동",
+      "item": [
+        {
+          "name": "01. 등록예약",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"등록 예약 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "    pm.collectionVariables.set(\"ap-auto-reserveId\", )\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "regist_reserve",
+                "disabled": true
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"merchantUserId\": \"__merchantUserId__\",\r\n    \r\n    \"returnUrl\": \"https://pay.naver.com/payments/test-supports/auth-automatic-pay\",\r\n    \r\n    \"purchaserName\" : \"박은경\",\r\n    \"purchaserBirthday\" : \"19970725\",\r\n    \r\n    \"subMerchantName\": \"__subMerchantName__\",\r\n\t\"subMerchantId\": \"__subMerchantId__\",\r\n\t\r\n\"productCode\": \"__productCode__\",\r\n\t\"productName\": \"__productName__\",\r\n\r\n    \"cardMethodList\": [\r\n    \t{\r\n            \"cardCorpCode\": \"C0\"\r\n        },\r\n        {\r\n            \"cardCorpCode\": \"C1\"\r\n        },\r\n        {\r\n            \"cardCorpCode\": \"C3\"\r\n        },\r\n        {\r\n            \"cardCorpCode\": \"C4\"\r\n        },\r\n        {\r\n            \"cardCorpCode\": \"C5\"\r\n        },\r\n        {\r\n            \"cardCorpCode\": \"C7\"\r\n        },\r\n        {\r\n            \"cardCorpCode\": \"C9\"\r\n        },\r\n        {\r\n            \"cardCorpCode\": \"CF\"\r\n        },\r\n        {\r\n            \"cardCorpCode\": \"CH\"\r\n        },\r\n        {\r\n            \"cardCorpCode\": \"CB\"\r\n        }\r\n    ]\r\n}"
+            },
+            "url": {
+              "raw": "https://{{ap-auto-domain}}/payments/auth-pay/automatic-payments/v1/reserve",
+              "protocol": "https",
+              "host": ["{{ap-auto-domain}}"],
+              "path": [
+                "payments",
+                "auth-pay",
+                "automatic-payments",
+                "v1",
+                "reserve"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "02. 등록완료",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "\r",
+                  "pm.test(\"등록 완료 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "    pm.collectionVariables.set(\"ap-auto-automaticPayId\", body.automaticPayId);\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   //\"automaticPayId\": \"20261105AT0000024673\"\r\n}"
+            },
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/automatic-payments/v1/:automaticPayId/apply",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": [
+                "payments",
+                "auth-pay",
+                "automatic-payments",
+                "v1",
+                ":automaticPayId",
+                "apply"
+              ],
+              "query": [
+                {
+                  "key": "reserveId",
+                  "value": "{{ap-auto-reserveId}}",
+                  "type": "text",
+                  "disabled": true
+                }
+              ],
+              "variable": [
+                {
+                  "key": "automaticPayId",
+                  "value": "20261112AT0000024813"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "03. 결제예약",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "\r",
+                  "pm.test(\"결제 예약 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "    pm.collectionVariables.set(\"ap-auto-paymentId\", body.paymentId);\r",
+                  "    pm.collectionVariables.set(\"ap-auto-merchantPayId\", body.merchantPayId);\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"merchantUserId\": \"__merchantUserId__\",\r\n  \"merchantPayId\": \"온라인결제QA_인증형자동-20261105152745066\",\r\n  \"productName\": \"인증형자동-API자동화테스트\",\r\n  \"productCount\": 1,\r\n  \"totalAmount\": 1000,\r\n  \"purchaserName\": \"박은경\",\r\n  \"purchaserBirthday\": \"19970725\",\r\n  \"merchantExtraParameter\": \"testMerchantExtraParameter\",\r\n  \"subMerchantInfo\": {\r\n    \"subMerchantName\": \"온라인결제QA_인증형자동-하부가맹점명\",\r\n    \"subMerchantId\": \"온라인결제QA_인증-subMerchantId\",\r\n    \"subMerchantBusinessNo\": \"0123456789\",\r\n    \"subMerchantPayId\": \"온라인결제QA_인증형자동-subMerchantPayId\",\r\n    \"subMerchantTelephoneNo\": \"1588-3820\",\r\n    \"subMerchantCustomerServiceUrl\": \"https://www.naver.com/customer-service-url\",\r\n    \"subMerchantUrl\": \"https://www.apple.com\"\r\n  }\r\n}"
+            },
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/automatic-payments/v1/:automaticPayId",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": [
+                "payments",
+                "auth-pay",
+                "automatic-payments",
+                "v1",
+                ":automaticPayId"
+              ],
+              "variable": [
+                {
+                  "key": "automaticPayId",
+                  "value": "{{ap-auto-automaticPayId}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "04. 결제인증",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"결제 인증 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\")\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"paymentId\":\"{{ap-auto-paymentId}}\",\r\n\t\"encryptKey\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkBQ4+7P1u51Z3IrvO4YN1/kiM554jACUO5TEAqWghTDh6iD86Ico23o11AmOuDHbW6kza4b1/AEJVUkdaPkfRB96psX1PvhWsBzV45WgfooE+RczkfeYh6n2kTMji3oyWYsQ1faJMgU91mnA2rS1i1USnBvXGnue02JS+4vabgeKImXfwM7oG1GeNzL08I5w8hGYZ6Sr+npuLxcBcAX7W7O7/r7PBrZs2xTWfRUwrP6mZzXGoNu+jq90fFVoENVa6tzu5z6IVMBz7Fa/V05vH+FoZqqbzFI63fSr+Hn2JEnrhMa5Zc/oRpuOlREKNArIzAdoj7ki1eIxuaaKqP6fywIDAQAB\"\r\n}"
+            },
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/v1/authorize",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "authorize"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "05. 결제승인",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "const historyDetail = body.historyDetail;\r",
+                  "const subMerchantInfo = historyDetail.subMerchantInfo;\r",
+                  "\r",
+                  "pm.test(\"결제 승인 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "})\r",
+                  "\r",
+                  "// 1. body 필수 필드 검증\r",
+                  "pm.test(\"body 필수 필드 존재 확인\", function () {\r",
+                  "    const requiredFields = [\r",
+                  "        \"paymentId\",\r",
+                  "        \"historyDetail\"\r",
+                  "    ];\r",
+                  "\r",
+                  "    requiredFields.forEach(field => {\r",
+                  "        pm.expect(body).to.have.property(field);\r",
+                  "    });\r",
+                  "});\r",
+                  "\r",
+                  "// 2. historyDetail 필수 필드 검증\r",
+                  "pm.test(\"historyDetail 필수 필드 존재 확인\", function () {\r",
+                  "    const requiredFields = [\r",
+                  "        \"paymentId\",\r",
+                  "        \"payHistId\",\r",
+                  "        \"admissionState\",\r",
+                  "        \"admissionTypeCode\",\r",
+                  "        \"tradeDate\",\r",
+                  "        \"totalAmount\",\r",
+                  "        \"merchantName\",\r",
+                  "        \"merchantId\",\r",
+                  "        \"merchantPayId\",\r",
+                  "        \"merchantUserId\",\r",
+                  "        \"productName\",\r",
+                  "        \"merchantExtraParameter\",\r",
+                  "        \"subMerchantInfo\",\r",
+                  "        \"cardType\",\r",
+                  "        \"cardCorpCode\",\r",
+                  "        \"cardNo\",\r",
+                  "        \"cardAuthNo\",\r",
+                  "        \"usedCardPoint\",\r",
+                  "        \"installmentMonth\"\r",
+                  "    ];\r",
+                  "\r",
+                  "    requiredFields.forEach(field => {\r",
+                  "        pm.expect(historyDetail).to.have.property(field);\r",
+                  "    });\r",
+                  "});\r",
+                  "\r",
+                  "// 3. subMerchantInfo 필수 필드 검증\r",
+                  "pm.test(\"subMerchantInfo 필수 필드 존재 확인\", function () {\r",
+                  "    const requiredFields = [\r",
+                  "        \"subMerchantName\",\r",
+                  "        \"subMerchantId\",\r",
+                  "        \"subMerchantBusinessNo\",\r",
+                  "        \"subMerchantPayId\",\r",
+                  "        \"subMerchantTelephoneNo\",\r",
+                  "        \"subMerchantCustomerServiceUrl\",\r",
+                  "        \"subMerchantUrl\"\r",
+                  "    ];\r",
+                  "\r",
+                  "    requiredFields.forEach(field => {\r",
+                  "        pm.expect(subMerchantInfo).to.have.property(field);\r",
+                  "    });\r",
+                  "});\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"paymentId\":\"{{ap-auto-paymentId}}\",\r\n\t\"success\" : true,\r\n\t\"cardAuthNo\" : \"1234567890-1234567890123456789\"\r\n}\r\n"
+            },
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/v1/apply",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "apply"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "06. 결제취소",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "\r",
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "\r",
+                  "pm.test(\"결제 취소 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\")\r",
+                  "})\r",
+                  "\r",
+                  "// body 필수 필드 검증\r",
+                  "pm.test(\"body 필수 필드 존재 확인\", function () {\r",
+                  "    const requiredFields = [\r",
+                  "        \"paymentId\",\r",
+                  "        \"merchantPayId\",\r",
+                  "        \"cancelAmount\",\r",
+                  "        \"payHistId\",\r",
+                  "        \"restAmount\",\r",
+                  "        \"cancelDate\"\r",
+                  "    ];\r",
+                  "\r",
+                  "    requiredFields.forEach(field => {\r",
+                  "        pm.expect(body).to.have.property(field);\r",
+                  "    });\r",
+                  "});\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"paymentId\": \"{{ap-auto-paymentId}}\",\r\n\t\"cancelAmount\": 1000,\r\n\t\"cancelReason\": \"==cancelReason==\",\r\n\t\"cancelRequester\": 2\r\n\t\r\n}\r\n"
+            },
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/v1/cancel",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "cancel"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "07. 등록해지",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"등록 해지 성공했습니다.\", function() {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"cancelRequester\": \"MERCHANT_ADMIN\",\r\n    \"cancelReason\": \"__cancelReason__\"\r\n}"
+            },
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/automatic-payments/v1/:automaticPayId/cancel",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": [
+                "payments",
+                "auth-pay",
+                "automatic-payments",
+                "v1",
+                ":automaticPayId",
+                "cancel"
+              ],
+              "variable": [
+                {
+                  "key": "automaticPayId",
+                  "value": "{{ap-auto-automaticPayId}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "08. 등록내역조회 (기간)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "const now = new Date();\r",
+                  "\r",
+                  "const yyyy = now.getFullYear();\r",
+                  "const MM = String(now.getMonth() + 1).padStart(2, '0');\r",
+                  "const dd = String(now.getDate()).padStart(2, '0');\r",
+                  "\r",
+                  "const HH = String(now.getHours()).padStart(2, '0');\r",
+                  "const mm = String(now.getMinutes()).padStart(2, '0');\r",
+                  "const ss = String(now.getSeconds()).padStart(2, '0');\r",
+                  "\r",
+                  "pm.collectionVariables.set(\"startTime\", `${yyyy}-${MM}-${dd}T00:00:00+0900`);\r",
+                  "pm.collectionVariables.set(\"endTime\", `${yyyy}-${MM}-${dd}T${HH}:${mm}:${ss}+0900`);"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "\r",
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "const detailList = body.detailList;\r",
+                  "const detailListLength = detailList.length;\r",
+                  "\r",
+                  "const requiredFields = [\r",
+                  "    \"automaticPayId\",\r",
+                  "    \"merchantUserId\",\r",
+                  "    \"automaticPayName\",\r",
+                  "    \"cardType\",\r",
+                  "    \"maskedCardNo\",\r",
+                  "    \"subMerchantName\",\r",
+                  "    \"subMerchantId\",\r",
+                  "    \"productCode\",\r",
+                  "    \"productName\",\r",
+                  "    \"registrationDate\",\r",
+                  "    \"deactivationDate\",\r",
+                  "    \"deactivationRequester\",\r",
+                  "    \"deactivationReason\",\r",
+                  "    \"deactivationRequesterId\",\r",
+                  "    \"automaticPayStatus\",\r",
+                  "    \"cardCorpCode\"\r",
+                  "];\r",
+                  "\r",
+                  "const bodyFields = [\r",
+                  "    \"detailList\",\r",
+                  "    \"totalCount\",\r",
+                  "    \"currentCount\",\r",
+                  "    \"totalPageCount\",\r",
+                  "    \"currentPageNo\"\r",
+                  "];\r",
+                  "\r",
+                  "// 1. 등록내역 조회 성공 여부\r",
+                  "pm.test(\"등록내역 조회에 성공했습니다.\", function () {\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "});\r",
+                  "\r",
+                  "// 2. 등록내역 배열 존재 여부\r",
+                  "pm.test(\"등록내역 배열이 존재합니다.\", function () {\r",
+                  "    pm.expect(detailList).to.be.an(\"array\");\r",
+                  "});\r",
+                  "\r",
+                  "// 3. 등록내역 조회 건수\r",
+                  "pm.test(`기간 내 등록내역이 ${detailListLength}건 조회됩니다.`, function () {\r",
+                  "    pm.expect(body.currentCount).to.eql(detailListLength);\r",
+                  "});\r",
+                  "\r",
+                  "// 4. 등록일시 오름차순 정렬 -> 스펙 확인하고 코드 수정정\r",
+                  "\r",
+                  "// if (detailListLength > 1) {\r",
+                  "//     pm.test(\"등록내역이 registrationDate 기준 오름차순으로 정렬됩니다.\", function () {\r",
+                  "//         for (let i = 0; i < detailListLength - 1; i++) {\r",
+                  "//             const current = detailList[i].registrationDate;\r",
+                  "//             const next = detailList[i + 1].registrationDate;\r",
+                  "\r",
+                  "//             pm.expect(current <= next).to.be.true;\r",
+                  "//         }\r",
+                  "//     });\r",
+                  "// }\r",
+                  "\r",
+                  "\r",
+                  "// 6. body 필수 필드 검증\r",
+                  "pm.test(\"body 필수 필드가 정상 조회됩니다.\", function () {\r",
+                  "    bodyFields.forEach(field => {\r",
+                  "        pm.expect(body).to.have.property(field);\r",
+                  "    });\r",
+                  "});\r",
+                  "\r",
+                  "// 7. 등록내역 필수 필드 검증\r",
+                  "pm.test(\"등록내역 필수 필드가 정상 조회됩니다.\", function () {\r",
+                  "    detailList.forEach((item, index) => {\r",
+                  "        requiredFields.forEach(field => {\r",
+                  "            pm.expect(item, `detailList[${index}] - ${field}`)\r",
+                  "                .to.have.property(field);\r",
+                  "        });\r",
+                  "    });\r",
+                  "});\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{env}}",
+                "disabled": true
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"startDate\": \"{{startTime}}\",\r\n    \"endDate\": \"{{endTime}}\",\r\n    \"pageNo\" : 1,\r\n    \"rowsPerPage\" : 100,\r\n    \"automaticPayStatus\" : \"ALL\",\r\n    \"includeGroup\" : false\r\n}"
+            },
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/automatic-payments/v1/details",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": [
+                "payments",
+                "auth-pay",
+                "automatic-payments",
+                "v1",
+                "details"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "09. 등록내역조회 (단건)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "\r",
+                  "const bodyFields = [\r",
+                  "    \"automaticPayId\",\r",
+                  "    \"merchantUserId\",\r",
+                  "    \"automaticPayName\",\r",
+                  "    \"cardType\",\r",
+                  "    \"maskedCardNo\",\r",
+                  "    \"subMerchantName\",\r",
+                  "    \"subMerchantId\",\r",
+                  "    \"productCode\",\r",
+                  "    \"productName\",\r",
+                  "    \"registrationDate\",\r",
+                  "    \"deactivationDate\",\r",
+                  "    \"deactivationRequester\",\r",
+                  "    \"deactivationReason\",\r",
+                  "    \"deactivationRequesterId\",\r",
+                  "    \"automaticPayStatus\",\r",
+                  "    \"cardCorpCode\"\r",
+                  "];\r",
+                  "\r",
+                  "\r",
+                  "pm.test(\"특정 등록번호의 등록내역조회에 성공했습니다.\", function(){\r",
+                  "    pm.expect(result.code).to.eql(\"Success\");\r",
+                  "})\r",
+                  "\r",
+                  "pm.test(\"body 필수 필드가 확인되었습니다.\", function(){\r",
+                  "    bodyFields.forEach(field => {\r",
+                  "        pm.expect(result.body).to.have.property(field)\r",
+                  "    })\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-NaverPay-Idempotency-Key",
+                "value": "{{$guid}}"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              }
+            ],
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/automatic-payments/v1/details/:automaticPayId",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": [
+                "payments",
+                "auth-pay",
+                "automatic-payments",
+                "v1",
+                "details",
+                ":automaticPayId"
+              ],
+              "variable": [
+                {
+                  "key": "automaticPayId",
+                  "value": "{{ap-auto-automaticPayId}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "10. 결제내역조회 (기간)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "const now = new Date();\r",
+                  "\r",
+                  "const yyyy = now.getFullYear();\r",
+                  "const MM = String(now.getMonth() + 1).padStart(2, '0');\r",
+                  "const dd = String(now.getDate()).padStart(2, '0');\r",
+                  "\r",
+                  "const HH = String(now.getHours()).padStart(2, '0');\r",
+                  "const mm = String(now.getMinutes()).padStart(2, '0');\r",
+                  "const ss = String(now.getSeconds()).padStart(2, '0');\r",
+                  "\r",
+                  "pm.collectionVariables.set(\"startTime\", `${yyyy}-${MM}-${dd}T00:00:00+0900`);\r",
+                  "pm.collectionVariables.set(\"endTime\", `${yyyy}-${MM}-${dd}T${HH}:${mm}:${ss}+0900`);"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "\r",
+                  "pm.test(\"결제 내역 조회 성공했습니다.\", function(){\r",
+                  "    pm.expect(result.code).to.eql(\"Success\")\r",
+                  "})"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {
+              "content-type": true,
+              "content-length": true,
+              "host": true,
+              "user-agent": true
+            }
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"startDate\": \"{{startTime}}\",\r\n    \"endDate\": \"{{endTime}}\",\r\n    \"approvalType\": \"ALL\",\r\n    \"pageNo\": 1,\r\n    \"rowsPerPage\": 3\r\n}"
+            },
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/v1/history",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "history"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "11. 결제내역조회 (단건)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const result = pm.response.json();\r",
+                  "const body = result.body;\r",
+                  "const detailList = body.detailList;\r",
+                  "\r",
+                  "const bodyFields = [\r",
+                  "    \"detailList\",\r",
+                  "    \"totalCount\",\r",
+                  "    \"currentCount\",\r",
+                  "    \"totalPageCount\",\r",
+                  "    \"currentPageNo\"\r",
+                  "];\r",
+                  "\r",
+                  "const requiredFields = [\r",
+                  "    \"paymentId\",\r",
+                  "    \"payHistId\",\r",
+                  "    \"admissionState\",\r",
+                  "    \"admissionTypeCode\",\r",
+                  "    \"tradeDate\",\r",
+                  "    \"totalAmount\",\r",
+                  "    \"merchantName\",\r",
+                  "    \"merchantId\",\r",
+                  "    \"merchantPayId\",\r",
+                  "    \"merchantUserId\",\r",
+                  "    \"productName\",\r",
+                  "    \"merchantExtraParameter\",\r",
+                  "    \"subMerchantInfo\",\r",
+                  "    \"cardType\",\r",
+                  "    \"cardCorpCode\",\r",
+                  "    \"cardNo\",\r",
+                  "    \"cardAuthNo\",\r",
+                  "    \"usedCardPoint\",\r",
+                  "    \"installmentMonth\"\r",
+                  "];\r",
+                  "\r",
+                  "const subMerchantFields = [\r",
+                  "    \"subMerchantName\",\r",
+                  "    \"subMerchantId\",\r",
+                  "    \"subMerchantBusinessNo\",\r",
+                  "    \"subMerchantPayId\",\r",
+                  "    \"subMerchantTelephoneNo\",\r",
+                  "    \"subMerchantCustomerServiceUrl\",\r",
+                  "    \"subMerchantUrl\"\r",
+                  "];\r",
+                  "\r",
+                  "pm.test(`결제번호 ${detailList[0].paymentId}의 결제내역 조회를 성공했습니다.`)\r",
+                  "\r",
+                  "// 1. body 필수 필드 검증\r",
+                  "pm.test(\"body 필수 필드가 정상 조회됩니다.\", function () {\r",
+                  "    bodyFields.forEach(field => {\r",
+                  "        pm.expect(body).to.have.property(field);\r",
+                  "    });\r",
+                  "});\r",
+                  "\r",
+                  "// 2. 결제내역 필수 필드 검증\r",
+                  "pm.test(\"결제내역 필수 필드가 정상 조회됩니다.\", function () {\r",
+                  "    pm.expect(detailList).to.be.an(\"array\").that.is.not.empty;\r",
+                  "\r",
+                  "    detailList.forEach((payment, index) => {\r",
+                  "        requiredFields.forEach(field => {\r",
+                  "            pm.expect(payment, `detailList[${index}] - ${field}`)\r",
+                  "                .to.have.property(field);\r",
+                  "        });\r",
+                  "    });\r",
+                  "});\r",
+                  "\r",
+                  "// 3. 하부가맹점 필수 필드 검증\r",
+                  "pm.test(\"하부가맹점 필수 필드가 정상 조회됩니다.\", function () {\r",
+                  "    detailList.forEach((payment, index) => {\r",
+                  "        pm.expect(payment.subMerchantInfo).to.be.an(\"object\").and.not.null;\r",
+                  "\r",
+                  "        subMerchantFields.forEach(field => {\r",
+                  "            pm.expect(\r",
+                  "                payment.subMerchantInfo,\r",
+                  "                `detailList[${index}].subMerchantInfo - ${field}`\r",
+                  "            ).to.have.property(field);\r",
+                  "        });\r",
+                  "    });\r",
+                  "});\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Naver-Client-Id",
+                "value": "{{ap-auto-X-Naver-Client-Id}}"
+              },
+              {
+                "key": "X-Naver-Client-Secret",
+                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+              },
+              {
+                "key": "X-NaverPay-Chain-Id",
+                "value": "{{ap-auto-X-Naver-Chain-Id}}"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"pageNo\": 1,\r\n    \"rowsPerPage\": 5\r\n}"
+            },
+            "url": {
+              "raw": "http://{{ap-auto-domain}}/payments/auth-pay/v1/history/:paymentId",
+              "protocol": "http",
+              "host": ["{{ap-auto-domain}}"],
+              "path": ["payments", "auth-pay", "v1", "history", ":paymentId"],
+              "variable": [
+                {
+                  "key": "paymentId",
+                  "value": "{{ap-auto-paymentId}}"
+                }
               ]
             }
           },
@@ -2100,6 +3863,32 @@
     },
     {
       "key": "auto-paymentId",
+      "value": ""
+    },
+    {
+      "key": "ap-auto-reserveId",
+      "value": ""
+    },
+    {
+      "key": "ap-auto-paymentId",
+      "value": ""
+    },
+    {
+      "key": "ap-one-paymentId",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "ap-one-reserveId",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "ap-auto-automaticPayId",
+      "value": ""
+    },
+    {
+      "key": "ap-auto-merchantPayId",
       "value": ""
     }
   ]
