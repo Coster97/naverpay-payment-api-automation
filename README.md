@@ -18,6 +18,15 @@
 - API 간 응답 데이터 자동 연계
 - Newman 기반 CLI 테스트 실행
 - HTML 테스트 리포트 자동 생성
+
+---
+## 테스트 자동화 성과
+
+- 수동 테스트: API 36개 × 최소 3분 = 약 108분 소요
+- 자동화 테스트: 총 36개 API 테스트 약 27초 만에 수행
+- 테스트 수행 시간 약 99.6% 단축
+- API 간 응답 데이터 자동 연계 및 검증으로 반복적인 수동 작업 최소화
+- Newman 기반 일괄 실행으로 테스트 수행 효율 향상
 ---
 
 ## 기술 스택
@@ -30,49 +39,6 @@
 - GitHub
 ---
 
-## 단건 테스트 시나리오
-
-```
-결제 예약
-    ↓
-결제 승인
-    ↓
-포인트 적립 요청
-    ↓
-결제내역 조회 (특정)
-    ↓
-현금영수증 금액 조회
-    ↓
-결제 취소
-    ↓
-결제내역 조회 (기간)
-```
-
-## 자동 테스트 시나리오
-
-```
-등록 예약
-    ↓
-등록 완료
-    ↓
-등록내역 조회
-    ↓
-결제 예약
-    ↓
-결제 승인
-    ↓
-포인트 적립 요청
-    ↓
-결제내역 조회 (기간)
-    ↓
-현금영수증 금액 조회
-    ↓
-결제 취소
-    ↓
-결제내역 조회 (특정)
-    ↓
-등록 해지
-```
 
 각 API의 응답 데이터를 Environment Variable 및 Collection Variable에 저장하여 후속 API에서 재사용하도록 구성했습니다.
 
@@ -126,19 +92,75 @@ pm.collectionVariables.set("paymentId", response.body.paymentId);
 ## 향후 개선 계획
 
 - 실패 시나리오 및 예외 응답 검증 추가
-- 응답 스키마 기반 검증 강화
-- Collection 구조 개선
+- 결제유형별 코드 분리
+
+## 실행 방법
+
+### 1. 의존성 설치
+
+프로젝트 루트 디렉터리에서 실행합니다.
+
+```bash
+npm install
+```
+
+### 2. 환경변수 설정
+
+`postman/Environment.json` 파일에 API 호출에 필요한 환경변수를 설정합니다.
+
+- API 서버 도메인
+- Client ID / Client Secret
+- Chain ID 등 인증 정보
+
+### 3. API 테스트 실행
+
+```bash
+npx newman run "./postman/Collection.json" -e "./postman/Environment.json"
+```
+
+### 4. API 테스트 실행 및 HTML 리포트 생성
+
+```bash
+npx newman run "./postman/Collection.json" -e "./postman/Environment.json" -r cli,htmlextra --reporter-htmlextra-export "./reports/newman-report.html"
+```
+
+HTML 리포터가 설치되어 있지 않은 경우 다음 명령어로 설치합니다.
+
+```bash
+npm install --save-dev newman newman-reporter-htmlextra
+```
+
+### 5. HTML 리포트 확인
+
+Windows PowerShell 기준:
+
+```powershell
+start "./reports/newman-report.html"
+```
 
 ---
 
 ## 실행 결과 예시
 
+Newman 실행 시 터미널에서 API별 테스트 결과와 전체 실행 통계를 확인할 수 있습니다.
+
+HTML 리포트에서는 다음 항목을 확인할 수 있습니다.
+
+- 전체 API 요청 및 테스트 수행 결과
+- API별 응답 시간 및 HTTP 상태 코드
+- 테스트 성공·실패 건수
+- 실패한 테스트의 오류 메시지
+- 전체 테스트 실행 시간
+
+
 ### Newman CLI
 
-<img width="800" height="1289" alt="image" src="https://github.com/user-attachments/assets/b74a54ec-2106-4cfc-8c5c-63e661453314" />
+<img width="800" height="1235" alt="image" src="https://github.com/user-attachments/assets/411d5dfe-536d-4ed4-9ebd-f2138b358369" />
 
 
 ### HTML Report
 
-<img width="800" height="1205" alt="image" src="https://github.com/user-attachments/assets/5f7d4dca-ec18-4d1e-8cdd-314875aa3d90" />
+<img width="600" height="1000" alt="image" src="https://github.com/user-attachments/assets/f01a2414-6f9a-4609-aeba-880c561da8ef" />
+
+
 
