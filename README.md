@@ -132,9 +132,7 @@ npm install --save-dev newman newman-reporter-htmlextra
 
 ### 5. HTML 리포트 확인
 
-Windows PowerShell 기준:
-
-```powershell
+```bash
 start "./reports/newman-report.html"
 ```
 
