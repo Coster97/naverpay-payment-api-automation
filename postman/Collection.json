@@ -150,7 +150,7 @@
               "urlencoded": [
                 {
                   "key": "paymentId",
-                  "value": "20261118NP1215547672",
+                  "value": "20261119NP1215550770",
                   "type": "text",
                   "uuid": "0ebecd4d-d1de-45ec-9a0d-8191e7e801c5"
                 }
@@ -1008,13 +1008,13 @@
               "urlencoded": [
                 {
                   "key": "reserveId",
-                  "value": "20261118TzZLSkRhL0xMQ2tMdWx0RFMwTFlsRmJkZ200PQ==",
+                  "value": "20261119bzZTUmxiOU15alk1KzRmNkZsZ0Joc0d1MjRJPQ==",
                   "type": "text",
                   "uuid": "45cb0db1-c63e-4663-8007-e10763f204a2"
                 },
                 {
                   "key": "tempReceiptId",
-                  "value": "20261118TP1215547674VU42UT",
+                  "value": "20261119TP1215550789SnA0WT",
                   "type": "text",
                   "uuid": "675fafa1-d4a1-4ce7-94e1-da07e26f0f38"
                 }
@@ -2353,7 +2353,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"paymentId\":\"20261118NP1215547675\",\r\n\t\"encryptKey\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmIX+HQ2S1zaouF+eYWBWPMcKZ3/uqpnuwzSPEscJXA6x8ipqfKPpi9frpmmymbWDQaDzNf0m/pNWFs72gTW7yDjas6TmzcyItVlmBYqOSTizzUFWcVczR/cKJyn4HGf//c9bEnnrx3TOYFqQ08pvnucyPwv31XF/Pg+jzHWFS/QXMNwenXY4zNN4DWFsQWyW7IaY/GqXX52wLBh4JkYYnrnZqLRzoCBMrBSsdJXcF1evm8V3ShrmDo4azePCMCARS5ni3zbgdGZJ+QxBqAzjWOxBh9THNUXjw52dEXGXpZVS0F7Twdw6y94QD711M8DVcI4jtEnenmm+HQHIVsKjlQIDAQAB\"\r\n}\r\n"
+              "raw": "{\r\n\t\"paymentId\":\"20261119NP1215550801\",\r\n\t\"encryptKey\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmIX+HQ2S1zaouF+eYWBWPMcKZ3/uqpnuwzSPEscJXA6x8ipqfKPpi9frpmmymbWDQaDzNf0m/pNWFs72gTW7yDjas6TmzcyItVlmBYqOSTizzUFWcVczR/cKJyn4HGf//c9bEnnrx3TOYFqQ08pvnucyPwv31XF/Pg+jzHWFS/QXMNwenXY4zNN4DWFsQWyW7IaY/GqXX52wLBh4JkYYnrnZqLRzoCBMrBSsdJXcF1evm8V3ShrmDo4azePCMCARS5ni3zbgdGZJ+QxBqAzjWOxBh9THNUXjw52dEXGXpZVS0F7Twdw6y94QD711M8DVcI4jtEnenmm+HQHIVsKjlQIDAQAB\"\r\n}\r\n"
             },
             "url": {
               "raw": "http://{{auto-one-domain}}/payments/auth-pay/v1/authorize",
@@ -2924,7 +2924,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n   //\"automaticPayId\": \"20261118AT0000024989\"\r\n}"
+              "raw": "{\r\n   //\"automaticPayId\": \"20261119AT0000024996\"\r\n}"
             },
             "url": {
               "raw": "http://{{ap-auto-domain}}/payments/auth-pay/automatic-payments/v1/:automaticPayId/apply",
@@ -2949,7 +2949,7 @@
               "variable": [
                 {
                   "key": "automaticPayId",
-                  "value": "20261118AT0000024989"
+                  "value": "20261119AT0000024996"
                 }
               ]
             }
@@ -3627,19 +3627,22 @@
               "listen": "prerequest",
               "script": {
                 "exec": [
-                  "const now = new Date();\r",
-                  "\r",
-                  "const yyyy = now.getFullYear();\r",
-                  "const MM = String(now.getMonth() + 1).padStart(2, '0');\r",
-                  "const dd = String(now.getDate()).padStart(2, '0');\r",
-                  "\r",
-                  "const HH = String(now.getHours()).padStart(2, '0');\r",
-                  "const mm = String(now.getMinutes()).padStart(2, '0');\r",
-                  "const ss = String(now.getSeconds()).padStart(2, '0');\r",
-                  "\r",
-                  "pm.collectionVariables.set(\"startTime\", `${yyyy}-${MM}-${dd}T00:00:00+0900`);\r",
-                  "pm.collectionVariables.set(\"endTime\", `${yyyy}-${MM}-${dd}T${HH}:${mm}:${ss}+0900`);"
+                  "setTimeout(() => {",
+                  "    const now = new Date();",
+                  "",
+                  "    const yyyy = now.getFullYear();",
+                  "    const MM = String(now.getMonth() + 1).padStart(2, '0');",
+                  "    const dd = String(now.getDate()).padStart(2, '0');",
+                  "",
+                  "    const HH = String(now.getHours()).padStart(2, '0');",
+                  "    const mm = String(now.getMinutes()).padStart(2, '0');",
+                  "    const ss = String(now.getSeconds()).padStart(2, '0');",
+                  "",
+                  "    pm.collectionVariables.set('startTime', `${yyyy}-${MM}-${dd}T00:00:00+0900`);",
+                  "    pm.collectionVariables.set('endTime', `${yyyy}-${MM}-${dd}T${HH}:${mm}:${ss}+0900`);",
+                  "}, 3000);"
                 ],
+
                 "type": "text/javascript",
                 "packages": {},
                 "requests": {}
@@ -3661,43 +3664,33 @@
               }
             }
           ],
-          "protocolProfileBehavior": {
-            "disabledSystemHeaders": {
-              "content-type": true,
-              "content-length": true,
-              "host": true,
-              "user-agent": true
-            }
-          },
           "request": {
             "method": "POST",
             "header": [
               {
-                "key": "Content-Type",
-                "value": "application/json"
-              },
-              {
                 "key": "X-Naver-Client-Id",
-                "value": "{{ap-auto-X-Naver-Client-Id}}"
+                "value": "{{ap-auto-X-Naver-Client-Id}}",
+                "type": "text"
               },
               {
                 "key": "X-Naver-Client-Secret",
-                "value": "{{ap-auto-X-Naver-Client-Secret}}"
+                "value": "{{ap-auto-X-Naver-Client-Secret}}",
+                "type": "text"
               },
               {
                 "key": "X-NaverPay-Chain-Id",
-                "value": "{{ap-auto-X-Naver-Chain-Id}}"
-              },
-              {
-                "key": "Accept-Language",
-                "value": "ko-KR,ko,en-US,en,ja-JP,ja,zh-CN,zh-TW,fr-FR,de-DE,es-ES,it-IT,pt-BR,ru-RU,vi-VN,th-TH,id-ID,ar-SA,hi-IN,nl-NL",
-                "type": "text",
-                "disabled": true
+                "value": "{{ap-auto-X-Naver-Chain-Id}}",
+                "type": "text"
               }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"startDate\": \"{{startTime}}\",\r\n    \"endDate\": \"{{endTime}}\",\r\n    \"approvalType\": \"ALL\",\r\n    \"pageNo\": 1,\r\n    \"rowsPerPage\": 3\r\n}"
+              "raw": "{\r\n    \"startDate\": \"{{startTime}}\",\r\n    \"endDate\": \"{{endTime}}\",\r\n    \"approvalType\": \"ALL\",\r\n    \"pageNo\": 1,\r\n    \"rowsPerPage\": 20\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
             },
             "url": {
               "raw": "http://{{ap-auto-domain}}/payments/auth-pay/v1/history",
@@ -3706,8 +3699,7 @@
               "path": ["payments", "auth-pay", "v1", "history"]
             }
           },
-          "response": [],
-          "disabled": true
+          "response": []
         },
         {
           "name": "11. 결제내역조회 (단건)",
