@@ -153,12 +153,14 @@ HTML 리포트에서는 다음 항목을 확인할 수 있습니다.
 
 ### Newman CLI
 
-<img width="800" height="1235" alt="image" src="https://github.com/user-attachments/assets/411d5dfe-536d-4ed4-9ebd-f2138b358369" />
+<img width="1117" height="971" alt="image" src="https://github.com/user-attachments/assets/44555c47-1bc8-4c8c-a178-948b12d14b5e" />
+
 
 
 ### HTML Report
 
-<img width="600" height="1000" alt="image" src="https://github.com/user-attachments/assets/f01a2414-6f9a-4609-aeba-880c561da8ef" />
+<img width="859" height="904" alt="image" src="https://github.com/user-attachments/assets/f7849822-d3e6-41c8-8ced-efd838140fd9" />
+
 
 
 
